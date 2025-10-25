@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0b1220;
+  --foreground: #f8fafc;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.container-prose p {
+  @apply text-slate-300 leading-7;
+}
+.container-prose h2 {
+  @apply text-2xl font-semibold text-white mt-8 mb-3;
+}
+.container-prose a { @apply text-brand-400 underline; }
